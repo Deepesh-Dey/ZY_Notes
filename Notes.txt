@@ -43,3 +43,6 @@ HTTP Status Codes;
     500 — something crashed inside your Express/Node code
     503 — server is overloaded or down
 
+An endpoint is just a specific URL + HTTP method combination that your API exposes for the client to use.
+
+
