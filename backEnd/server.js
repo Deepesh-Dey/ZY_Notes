@@ -4,7 +4,10 @@ import express from "express";
 const app = express();
 
 app.get("/api/notes", (req, res) => {
-    res.send("You got 5 Notes");
+    res.status(200).send("You got 5 Notes");
+});
+app.post("/api/notes", (req, res) => {
+    res.status(201).send("Your Note is created successfully");
 });
 
 app.listen(5001, () => {

@@ -13,3 +13,33 @@ The big idea is that the entire stack uses JavaScript — same language front to
 API stands for Application Programming Interface. In simple words — it's a messenger that sits between two applications and lets them talk to each other.
 You never go directly into the kitchen — the waiter handles everything in between. Same way, React never touches MongoDB directly — the API (Express) handles everything in between.
 
+Why use an API instead of connecting React directly to MongoDB?
+Security — You never expose your database directly to the browser. All access goes through Express where you can add authentication, rate limiting, and validation.
+
+REST API 
+REST stands for Representational State Transfer. It's basically a set of rules/guidelines for how an API should be designed so that it's clean, predictable and easy to use.
+The 4 REST methods map directly to CRUD:
+HTTP Method     CRUD Operation     Real world example
+POST            Create             Fill the form and hit "Save Note"
+GET             Read               Open your notes app — all notes load
+PUT             Update             Edit a note and hit "Update"
+DELETE          Delete             Hit the delete button on a note
+
+HTTP Status Codes;
+1xx — Informational — "Hold on, still working on it." Rarely used, you won't write these manually.
+2xx — Success — "All good!" The ones you'll use most in your notes app:
+    200 OK — successful GET (fetched notes)
+    201 Created — successful POST (note saved)
+    [204] No Content — successful DELETE (note removed, nothing to return)
+3xx — Redirection  — "Go somewhere else." Handled mostly by browsers automatically. Not something you'll write often in MERN.
+    301 Moved Permanently 
+4xx — Client Errors — "You messed up the request bro!" The client sent something wrong:
+    400 — bad/invalid data sent
+    401 — not logged in
+    403 — logged in but no permission
+    404 — note with that ID doesn't exist
+    429 — too many requests (rate limit hit — this is the one in your notes app!)
+5xx — Server Errors — "We messed up!" Something broke on the server/backend side:
+    500 — something crashed inside your Express/Node code
+    503 — server is overloaded or down
+
