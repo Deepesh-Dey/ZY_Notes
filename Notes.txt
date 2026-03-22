@@ -1,0 +1,15 @@
+See Intro_ Mind Map
+
+Read Links/Claude
+
+MERN is a full-stack JavaScript framework made up of 4 technologies:
+M — MongoDB is the database. It stores data as flexible JSON-like documents instead of rigid tables, making it a natural fit for JavaScript apps. (Place where ypu store data)
+E — Express.js is a lightweight backend web framework that runs on Node. It handles your API routes, middleware, and server logic. 
+    (A web framework id a ready to use toolbox for building web apps farter and more easily. It saves time, organised codes, and handle common tasks like routing, error handling, etc)
+R — React is the frontend library built by Meta. It lets you build fast, interactive UIs using components and manages what the user sees in the browser. 
+N — Node.js is the JavaScript runtime that makes it possible to run JS on the server (not just in the browser). Express runs on top of Node. (Allows you to run JS on server)
+The big idea is that the entire stack uses JavaScript — same language front to back, which makes it beginner-friendly and very popular for building full-stack web apps quickly.
+
+API stands for Application Programming Interface. In simple words — it's a messenger that sits between two applications and lets them talk to each other.
+You never go directly into the kitchen — the waiter handles everything in between. Same way, React never touches MongoDB directly — the API (Express) handles everything in between.
+

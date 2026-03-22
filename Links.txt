@@ -1,4 +1,8 @@
+//YT:
 //https://youtu.be/F9gB5b4jgOI?si=3bCrUufjUbOT_Q1w
 
 //Notes:
 //https://notegpt.io/detail?id=F9gB5b4jgOI&utm_source=youtube-video-summarizer&epl=1
+
+//Claude:
+//https://claude.ai/chat/73911d44-9863-4453-9e1a-5c5d62064b05
